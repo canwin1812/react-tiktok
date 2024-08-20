@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function App(){
+export default function Header(){
   return (
-    <div className='App'>
-      <div className='header'>
+    <div className='Header'>
+      <div className='header-content'>
         <div>
           <p>Logo</p>
         </div>

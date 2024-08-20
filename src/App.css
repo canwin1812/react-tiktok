@@ -41,7 +41,7 @@
     transform: rotate(360deg);
   }
 }
-.header{
+.header-content{
   background-color: aqua;
   min-height: 4rem;
   display: flex;
