@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.header{
+  background-color: aqua;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+.main-container{
+  display: flex;
+  min-height: calc(100vh - 4rem);
+  background-color: coral;
+}
+.sidebar{
+  width: 150px;
+  display: flex;
+  min-height: 300px;
+  background-color: cornsilk;
+}
+.content{
+  display: flex;
+  flex-grow: 1;
 }
