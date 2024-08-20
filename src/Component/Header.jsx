@@ -9,8 +9,8 @@ export default function App(){
         </div>
       </div>
       <div className='main-container'>
-        <div className='sidebar'>sidebar</div>
-        <div className='content'>content</div>
+        <div className='Sidebar'>sidebar</div>
+        <div className='Content'>content</div>
       </div>
     </div>
   )
