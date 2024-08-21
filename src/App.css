@@ -41,26 +41,40 @@
     transform: rotate(360deg);
   }
 }
-.header-content{
+.header{
   background-color: aqua;
-  min-height: 4rem;
+  min-height: 2.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 10px 0 10px;
 }
-.main-container{
+.app-container{
   display: flex;
   min-height: calc(100vh - 4rem);
   background-color: coral;
 }
-.Sidebar{
-  width: 150px;
+.sidebar-container{
+  width: 130px;
   display: flex;
   min-height: 300px;
   background-color: cornsilk;
 }
-.Content{
+.content-container{
   display: flex;
   flex-grow: 1;
+}
+.search-input input{
+  width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 40px;
+    padding: 10px 45px 10px 40px;
+    color: gray;
+}
+.header .logo{
+
 }

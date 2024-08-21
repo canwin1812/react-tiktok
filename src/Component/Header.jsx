@@ -1,17 +1,21 @@
 import React from 'react';
+import Sidebar from './Sidebar';
+import Content from './Content';
 
-export default function Header(){
+export default function Header(props){
+
   return (
-    <div className='Header'>
-      <div className='header-content'>
-        <div>
+    <div className='header-container'>
+      <div className='header'>
+        <div className='logo'>
           <p>Logo</p>
         </div>
+        <div className='search-input'>
+        </div>
+        <div className='contification-button'></div>
+        <div className='profile'></div>
       </div>
-      <div className='main-container'>
-        <div className='Sidebar'>sidebar</div>
-        <div className='Content'>content</div>
       </div>
-    </div>
+      
   )
 }
