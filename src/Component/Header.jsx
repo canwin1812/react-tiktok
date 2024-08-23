@@ -6,11 +6,11 @@ export default function Header(props){
 
   return (
     <div className='header-container'>
-      <div className='header'>
+      <div className='header1'>
         <div className='logo'>
           <p>Logo</p>
         </div>
-        <div className='search-input'>
+        <div className='search-field'>
         </div>
         <div className='contification-button'></div>
         <div className='profile'></div>

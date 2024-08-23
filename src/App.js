@@ -4,6 +4,7 @@ import Header from './Component/Header';
 import Sidebar from './Component/Sidebar';
 import Content from './Component/Content';
 import Container from './Component/Container';
+import Navbar from './Component/Navbar';
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Sidebar />
         <Content />
       </Container>
+      <Navbar/>
     </div>
 
 
