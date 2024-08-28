@@ -43,7 +43,82 @@
     transform: rotate(360deg);
   }
 }
+.wrapper {
+  border-top: 1px solid #e3e3e4;
+}
 
+
+.profile {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 5px;
+}
+.profile img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  display: grid;
+  place-items: center;
+}
+.profile h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 70%;
+}
+.sidebar-list {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+.sidebar-list .row {
+  width: 100%;
+  height: 40px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-list .row:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #title {
+  flex: 70%;
+}
+footer {
+  width: 100%;
+  display: none;
+  padding: 12px 12px;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  gap: 4.3rem;
+}
+footer .text-name {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+footer .abc {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 header {
   width: 100%;
   display: none;
@@ -52,17 +127,17 @@ header {
   padding: 0 1rem;
   background-color: var(--mainColor);
   color: var(--textColor);
+  position: fixed;
 }
 
 nav a {
   margin: 0 0.6rem;
- color: gray;
+  color: gray;
   text-decoration: none;
 }
 
 nav a:hover {
   color: var(--secondaryColor);
-  
 }
 
 button {
@@ -83,8 +158,8 @@ header .nav-btn {
 }
 
 header div,
-nav {}
-
+nav {
+}
 
 .header1 {
   background-color: aqua;
@@ -103,7 +178,6 @@ nav {}
 
 .sidebar-container {
   width: 130px;
-  display: flex;
   min-height: 300px;
   background-color: cornsilk;
 }
@@ -125,28 +199,32 @@ nav {}
   color: gray;
 }
 
-@media screen and (max-width:1062px) {
+@media screen and (max-width: 1062px) {
   .sidebar-container {
     width: 72px;
     height: 581px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .sidebar-container {
     display: none;
   }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
   }
-
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+  }
   .header-container {
     display: none;
   }
