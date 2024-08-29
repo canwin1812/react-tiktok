@@ -5,7 +5,7 @@ import Sidebar from './Component/Sidebar';
 import Content from './Component/Content';
 import Container from './Component/Container';
 import Navbar from './Component/Navbar';
-import MuiBottomNavbar from './Component/MuiBottomNavbar';
+import BottomNavbar from './Component/BottomNavbar';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Content />
       </Container>
       <Navbar/>
-      <MuiBottomNavbar/>
+      <BottomNavbar/>
     </div>
 
 

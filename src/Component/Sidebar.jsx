@@ -1,26 +1,26 @@
 import React from "react";
 import "../App.css";
-import { SidebarData } from "./SidebarDate";
+import { SidebarData } from "./SidebarData";
 import logoo from "../assets/images/buffett.jpg";
+import warren from "../assets/images/warren.png";
+import MenuItem from "./MenuItem";
+import Account from "./Account";
 
 export default function Sidebar(props) {
   const handleClick = () => {};
-  const Account = () => {};
   return (
     <div className="sidebar-container">
       <ul className="sidebar-list">
         {SidebarData.map((val, key) => {
           return (
-            <li
+            <MenuItem
+              text={val.title}
+              icon={val.icon}
               key={key}
-              className="row"
               onClick={() => {
                 window.location.pathname = val.link;
               }}
-            >
-              <div id="icon">{val.icon}</div>
-              <div id="title">{val.title}</div>
-            </li>
+            ></MenuItem>
           );
         })}
       </ul>
@@ -28,13 +28,70 @@ export default function Sidebar(props) {
         <img src={logoo} />
         <h4>Profile</h4>
       </button>
-      <h6>following account</h6>
-      <Account
-        username="hexlix6266"
-        displayName="Linh"
-        onClick={handleClick}
-        imageUrl="images/buffett.png"
-      />
+      <h6 className="follow">Following account</h6>
+      <div className="sidebar-content">
+        <ul className="account-list">
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+          <img className="images" src={warren} />
+          <Account
+            username="hexlix6266"
+            displayName="Linh"
+            onClick={handleClick}
+          ></Account>
+        </ul>
+        <h5 className="more">See more</h5>
+        <div className="list-content">
+          <ul className="list">
+            <li>
+              <a href="">Company</a>
+            </li>
+            <li>
+              <a href="">Program</a>
+            </li>
+            <li>
+              <a href="">Team & policies </a>
+            </li>
+            <li>
+              <a href="">2024 Tiktok</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
