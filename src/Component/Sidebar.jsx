@@ -33,44 +33,16 @@ export default function Sidebar(props) {
         <ul className="account-list">
           <img className="images" src={warren} />
           <Account
-            username="hexlix6266"
-            displayName="Linh"
+            username="dailybuffett"
+            displayName="Warren Buffett"
             onClick={handleClick}
           ></Account>
+        </ul>
+        <ul className="account-list">
           <img className="images" src={warren} />
           <Account
-            username="hexlix6266"
-            displayName="Linh"
-            onClick={handleClick}
-          ></Account>
-          <img className="images" src={warren} />
-          <Account
-            username="hexlix6266"
-            displayName="Linh"
-            onClick={handleClick}
-          ></Account>
-          <img className="images" src={warren} />
-          <Account
-            username="hexlix6266"
-            displayName="Linh"
-            onClick={handleClick}
-          ></Account>
-          <img className="images" src={warren} />
-          <Account
-            username="hexlix6266"
-            displayName="Linh"
-            onClick={handleClick}
-          ></Account>
-          <img className="images" src={warren} />
-          <Account
-            username="hexlix6266"
-            displayName="Linh"
-            onClick={handleClick}
-          ></Account>
-          <img className="images" src={warren} />
-          <Account
-            username="hexlix6266"
-            displayName="Linh"
+            username="dailybuffett"
+            displayName="Warren Buffett"
             onClick={handleClick}
           ></Account>
         </ul>
@@ -86,10 +58,10 @@ export default function Sidebar(props) {
             <li>
               <a href="">Team & policies </a>
             </li>
-            <li>
-              <a href="">2024 Tiktok</a>
-            </li>
           </ul>
+          <a href="" className="tiktok">
+            2024 Tiktok
+          </a>
         </div>
       </div>
     </div>
